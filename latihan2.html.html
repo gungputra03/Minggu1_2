@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Franklin Gothic Book, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #000080;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #51dacf;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Destination Gallery</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Batur Mountain</a></li>
+      <li><a href="#">Petitenget Beach</a></li>
+      <li><a href="#">Sukawati Art Market</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2>Batur Mountain</h2>
+    <p style="text-align:left;"> <img src="https://th.bing.com/th/id/R.5330145f6f6d79a25f15cd0d74ac9747?rik=8ZtU9zFm6WzL9g&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2fmount-batur-ad.jpg&ehk=9MA%2bwt1onRte1t%2bZHthraj1Mtg3lDffdI61fTLKkRhE%3d&risl=&pid=ImgRaw&r=0" alt="Smiley face" style="float:right;width:300px;height:300px;"> Situated in the cool mountainous region of Kintamani in north-east Bali, Mount Batur is the island’s second highest volcano (after Agung). Travellers come for sunrise trekking, jeep safaris, and a taste of rural Bali. Infrastructure is still basic in this relatively remote destination, so don’t expect the facilities (or visitor numbers) of the South.</p>
+    <p>But if raw nature and off-the-beaten-track adventure is your thing, Mount Batur is a must. And don’t forget to pack a jumper!</p>
+  </article>
+</section>
+
+<footer>
+  <p>copyright @gung.ptra</p>
+</footer>
+
+</body>
+</html>
